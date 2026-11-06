@@ -11,7 +11,12 @@ npm run typecheck  # TypeScript check
 npm run build      # production build
 ```
 
-## Deploy to Vercel
+## Live site — GitHub Pages
+
+Every push to `main` builds a static export (`STATIC_EXPORT=1` → `out/`) and deploys it via
+[`.github/workflows/pages.yml`](.github/workflows/pages.yml) to **https://bhashyamnaidu.github.io**.
+
+## Alternative: deploy to Vercel
 
 1. Push this repository to GitHub.
 2. In Vercel: **Add New → Project → Import** the repository. The framework (Next.js), build
