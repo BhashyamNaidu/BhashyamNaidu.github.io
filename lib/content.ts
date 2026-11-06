@@ -28,11 +28,8 @@ export const site = {
 
 export const links = {
   github: "https://github.com/BhashyamNaidu",
-  // MISSING: your LinkedIn profile URL. (A LinkedIn URL appears in your CloudOrderEngine
-  // README — confirm it is current before pasting it here.)
-  linkedin: null as string | null,
-  // MISSING: your professional email address.
-  email: null as string | null,
+  linkedin: "https://www.linkedin.com/in/bhashyamnaidu/" as string | null,
+  email: "bhashyamnaidu21@gmail.com" as string | null,
   // MISSING: put your resume at public/resume.pdf, then set this to "/resume.pdf".
   resume: null as string | null,
 };

@@ -34,8 +34,6 @@ All copy lives in [`lib/content.ts`](lib/content.ts). Every value marked **`MISS
 
 | Missing item | Field in `lib/content.ts` |
 | --- | --- |
-| LinkedIn URL | `links.linkedin` |
-| Professional email | `links.email` |
 | Resume | add `public/resume.pdf`, then set `links.resume = "/resume.pdf"` |
 | Mbanq internship dates | `timeline[0].period` |
 

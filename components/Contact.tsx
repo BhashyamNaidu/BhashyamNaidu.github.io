@@ -67,16 +67,18 @@ export function Contact() {
                         "aria-label": `${c.label}: ${c.value} (opens in a new tab)`,
                       }
                     : {})}
-                  className="group flex items-center gap-4 rounded-2xl border border-line bg-surface/70 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:bg-surface"
+                  className="group flex items-center gap-3 rounded-2xl border border-line bg-surface/70 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:bg-surface sm:gap-4 sm:p-5"
                 >
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-line-strong bg-raised text-muted transition-colors group-hover:text-fg">
+                  <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line-strong bg-raised text-muted transition-colors group-hover:text-fg sm:h-11 sm:w-11">
                     <c.icon className="h-5 w-5" />
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block font-mono text-[11px] uppercase tracking-[0.16em] text-dim">{c.label}</span>
-                    <span className="mt-0.5 block truncate text-fg/90">{c.value}</span>
+                    <span className="mt-0.5 block text-[14px] leading-snug text-fg/90 [overflow-wrap:anywhere] sm:text-[15px]">
+                      {c.value}
+                    </span>
                   </span>
-                  <ArrowUpRight className="h-4 w-4 shrink-0 text-dim transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent" />
+                  <ArrowUpRight className="hidden h-4 w-4 shrink-0 text-dim transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent sm:block" />
                 </a>
               </li>
             ))}
