@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+
+# local tooling / screenshots
+.playwright-mcp/
+.claude/
+*.log
+.DS_Store
